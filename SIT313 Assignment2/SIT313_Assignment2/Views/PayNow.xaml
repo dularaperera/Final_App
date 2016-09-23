@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIT313_Assignment2.Views.PayNow">
+  <StackLayout BackgroundColor="#f2e6d9" Padding="20">
+    <Label Text="Pay and comfirm Order" TextColor="Maroon" FontSize="Large"/>
+    <Image Source="newlogo.png" WidthRequest="250"/>
+    <Entry Placeholder="Customer Name" BackgroundColor="White" TextColor="Black" PlaceholderColor="Gray" />
+    <Entry Placeholder="Name as in cradit card"  BackgroundColor="White" TextColor="Black" PlaceholderColor="Gray"/>
+    <Entry Placeholder="Cradit card number"  BackgroundColor="White" TextColor="Black" PlaceholderColor="Gray"/>
+    <Entry Placeholder="CV Code"  BackgroundColor="White" TextColor="Black" PlaceholderColor="Gray"/>
+    <Button Text="Complete Payment" Clicked="PayNow_btn_Clicked" BackgroundColor="Maroon" TextColor="White" />
+
+  </StackLayout>
+</ContentPage>

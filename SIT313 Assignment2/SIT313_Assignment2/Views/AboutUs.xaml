@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIT313_Assignment2.AboutUs">
+  <ScrollView  Orientation = "Vertical" >
+    <StackLayout Spacing="10"  Padding="15" Orientation="Vertical" x:Name ="outerstack">
+      <Label Text="Restaurant Information" HorizontalTextAlignment="Center" FontSize="Small" TextColor="Maroon" BackgroundColor="#f2e6d9" HeightRequest="50" VerticalTextAlignment="Center"/>
+      <Image Source="wallpaper.jpg" HeightRequest="250" WidthRequest="250" Aspect="AspectFit" />
+
+      <StackLayout Padding ="20" BackgroundColor="White">
+        <Label  Text="Elephant House Restaurant is located in Australia. Our business has been up and running for 10 years.We serve at the highest standards of quality, freshness and seasonality and combines both modern-creative and traditional southern styles of Sri Lankan cuisine." FontSize="Micro" BackgroundColor="White" TextColor="Gray" />
+      </StackLayout>
+      <Label Text=" Developer Information" HorizontalTextAlignment="Center"  TextColor="Maroon" FontSize="Small"  BackgroundColor="#f2e6d9" HeightRequest="50" VerticalTextAlignment="Center"/>
+      <Image Source="developers.jpg" HeightRequest="250" WidthRequest="250" Aspect="AspectFit" Opacity="0.9" />
+      <StackLayout Padding ="20" BackgroundColor="White">
+        <Label Text="This app has been developed by Dulara, Dulanjan and Shanya for SIT 313 assignment 2." FontSize="Micro"  TextColor="Gray" />
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

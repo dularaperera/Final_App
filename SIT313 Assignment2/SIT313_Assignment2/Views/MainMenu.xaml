@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIT313_Assignment2.MainMenu">
+
+
+  <StackLayout Padding="20,0,20,0" x:Name="layout" HorizontalOptions="Center" VerticalOptions="Center">
+    <Image Source="newlogo.png"
+            
+           />
+    <StackLayout   BackgroundColor="#f2e6d9" Padding="0,0,0,20" HorizontalOptions="Center" VerticalOptions="Center" Opacity="0.8">
+      <Image Source="wallpaper.jpg"
+                />
+
+      <Button  Clicked="Meals_btn_Clicked" Text="Meals" VerticalOptions="Center" HorizontalOptions="Center"  WidthRequest="200"  BackgroundColor="Transparent" TextColor="Maroon" BorderColor="Maroon" BorderRadius="20" BorderWidth="1" FontSize="12"/>
+      <Button Clicked="About_btn_Clicked" Text="About Us" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200"  BackgroundColor="Transparent" TextColor="Maroon" BorderColor="Maroon" BorderRadius="20" BorderWidth="1" FontSize="12"/>
+      <Button Clicked="Cart_btn_Clicked" Text="Cart" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200"  BackgroundColor="Transparent" TextColor="Maroon" BorderColor="Maroon" BorderRadius="20" BorderWidth="1" FontSize="12"/>
+    </StackLayout>
+  </StackLayout>
+
+</ContentPage>

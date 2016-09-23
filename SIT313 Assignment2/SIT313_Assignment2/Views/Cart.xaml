@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIT313_Assignment2.Cart">
+
+  <StackLayout>
+    <StackLayout Orientation="Vertical" BackgroundColor="#f2e6d9" Padding="20"  VerticalOptions="Center">
+      <Label  Text="My Cart" FontSize="Large" TextColor="Maroon"/>
+    </StackLayout>
+    <ListView x:Name="cart" RowHeight="60" BackgroundColor="Transparent">
+      <ListView.ItemTemplate >
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout  Orientation="Vertical" Padding="1" >
+
+              <StackLayout Orientation="Horizontal"  BackgroundColor="#f2e6d9" Opacity="0.7" >
+                <Image Source="{Binding Image}"
+                HeightRequest="50"
+                       WidthRequest="50"
+              />
+                <StackLayout Orientation="Horizontal"   >
+                  <StackLayout Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="End">
+
+                    <Label
+                      Text="{Binding Name}"
+                       FontSize="Small"
+											TextColor="Maroon"
+                />
+                    <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="End">
+
+
+                      <Label
+                          Text="{Binding Price}"
+                          FontSize="Small"
+                           VerticalOptions="End" HorizontalOptions="End"
+													TextColor="Maroon"
+                />
+
+
+                      <Label
+                        Text="{Binding Qty}"
+                        FontSize="Small"
+                        WidthRequest="60"
+                        HorizontalTextAlignment="End"
+                        VerticalOptions="End"
+                        HorizontalOptions="End"
+															TextColor="Maroon"
+            />
+
+
+                      <Label
+                                    Text="items"
+                                    FontSize="Small"
+                                     VerticalOptions="End" HorizontalOptions="End"
+                                        TextColor="Maroon"
+                />
+
+                      <Label
+                      Text="{Binding Total}"
+                      VerticalOptions="End"
+                      HorizontalOptions="End"
+                      FontSize="20"
+                      WidthRequest="60"
+                      HorizontalTextAlignment="End"
+														TextColor="Maroon"
+            />
+                      <Label
+                      Text="$"
+                      FontSize="Micro"
+					TextColor="Maroon"
+            />
+                    </StackLayout>
+                  </StackLayout>
+                </StackLayout>
+              </StackLayout>
+
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    <StackLayout Orientation="Vertical" BackgroundColor="#f2e6d9" Padding="10"  VerticalOptions="Center">
+      <StackLayout Orientation="Horizontal" BackgroundColor="#f2e6d9" Padding="20"  VerticalOptions="End">
+        <Label  Text="Grand Total" FontSize="Large" TextColor="Maroon"/>
+        <Label  Text="$" FontSize="Small" TextColor="Black"/>
+        <Label x:Name="total" FontSize="Large" Text="100" TextColor="Black"/>
+      </StackLayout>
+      <Button Text="Pay Now" Clicked="pay_btn_Clicked"
+
+      BackgroundColor="Maroon"
+          TextColor="White"
+          WidthRequest="100"
+				/>
+    </StackLayout>
+
+  </StackLayout>
+</ContentPage>
